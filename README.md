@@ -36,10 +36,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  (https://www.bever.nl/)
+  Bever
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Bever - homepagina  
+  [Bever - homepagina ](https://www.bever.nl/) 
   <img src="readme-images/Homepagina.png" width="375px" alt="Home pagina van Bever">
 
   #### Screenshot(s) van de tweede pagina (small screen):
