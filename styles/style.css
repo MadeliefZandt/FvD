@@ -1,31 +1,480 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-
-
-
-
+img {
+  max-width: 100%;
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  /* startje */
+  --primary-color-text: #111;
+  --secondary-color-text: #fff;
+  --color-background: #eee;
+  --primary-color: #2c4d4b;
+  --secondary-color: #efba28;
+  --fontFamily: "Source Sans 3", sans-serif;
+}
+
+/****************/
+/* STYLING */
+/****************/
+
+html {
+  font-family: var(--fontFamily);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+}
+
+/* HEADER, behalve header ul */
+
+header>button {
+  /* JOUW CODE HIER - stap 3 */
+  order: -1;
+}
+
+header div:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: 10% auto 12% 12% 12%;
+  padding: 1.1em;
+  align-items: center;
+  justify-items: center;
+}
+
+header div:nth-of-type(2) {
+  position: relative;
+}
+
+header div:nth-of-type(2) input {
+  width: 100%;
+  height: 3em;
+  padding-right: 3em;
+  border: thin solid #a9a9a9;
+}
+
+header div:nth-of-type(2) img {
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  pointer-events: none;
+}
+
+header p {
+  background-color: var(--primary-color);
+  color: var(--secondary-color-text);
+  padding: 0.6em;
+  margin: 0;
+  text-align: center;
+}
+
+header div button {
+  outline: none;
+}
+
+header div img {
+  height: 1.8em;
+}
+
+/* ZOEKBALK */
+
+header div label {
+
+  display: block;
+  font: var(--fontFamily)
+}
+
+input {
+  width: 100%;
+  padding-right: 3em;
 }
 
 
+/* NAV */
+
+nav {
+  position: absolute;
+  translate: -110% 0%;
+  transition: translate .3s;
+  width: 100%;
+}
 
 
+nav.toonMenu {
+  translate: 0% 0%;
+  z-index: 1;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+nav>ul {
+  /* JOUW CODE HIER - stap 8 */
+  flex-direction: column;
+  padding: 0.3em;
+  margin: 0;
+}
 
-/* jouw code */
+/* CAROUSEL HEADER */
 
+header ul li {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+  max-width: 100vw;
+  text-align: center;
+}
+
+header ul li img {
+  height: 30em;
+  overflow: scroll;
+  object-fit: cover;
+  grid-area: 1 / 1 / 3 / 2;
+  /* https://css-tricks.com/almanac/properties/o/object-fit/ */
+}
+
+header nav ul {
+  background-color: white;
+}
+
+/* header carousel, misschien naar var */
+header>ul {
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* zodat je niet per ongeluk 'back' scrollt */
+  overscroll-behavior-x: contain;
+}
+
+/* ul carousel, zelfde als header ul */
+section ul {
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* zodat je niet per ongeluk 'back' scrollt */
+  overscroll-behavior-x: contain;
+  padding: 1em;
+  gap: 1em;
+
+}
+
+li {
+
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+header a {
+  padding: .5em;
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: white;
+  margin: auto;
+  border-radius: .5em;
+}
+
+svg {
+  fill: var(--primary-color)
+}
+
+section:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5em;
+  padding: 1em;
+}
+
+section:nth-of-type(1) h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 1em;
+}
+
+section:nth-of-type(1) article {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+section:nth-of-type(1) article a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+section:nth-of-type(1) article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section:nth-of-type(1) article p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+section:nth-of-type(2) {
+  background-color: var(--primary-color);
+  padding: 3em 2em;
+}
+
+/* Titel */
+section:nth-of-type(2) h2 {
+  margin: 0;
+
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Link onder de titel */
+section:nth-of-type(2) a {
+  display: inline-block;
+  margin-top: 1.5em;
+
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Afbeelding */
+section:nth-of-type(2) img {
+  display: block;
+  margin-top: 2em;
+
+  width: 100%;
+  max-width: 520px;
+
+}
+
+/* SECTION 3 */
+section:nth-of-type(3) section ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* @media (max-width: 1024px){ section ul{ grid-template-columns: repeat(3, 1fr);} }
+@media (max-width: 768px){  section ul{ grid-template-columns: repeat(2, 1fr);} }
+@media (max-width: 480px){  section ul{ grid-template-columns: 1fr;} } */
+
+
+/* ===== Product card (LI) – “Bever” look ===== */
+section:nth-of-type(3) li,
+section:nth-of-type(5) li {
+  display: grid;
+  grid-template-columns: repeat(5, 16px) 1fr;
+  grid-template-areas:
+    "img img img img img img"
+    "title title title title title title"
+    "s1 s2 s3 s4 s5 count"
+    "price price price price price price"
+    "colors colors colors colors colors colors";
+  row-gap: 14px;
+  column-gap: 6px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+  max-width: 40%;
+}
+
+/* IMAGE (grote lichtgrijze tile) */
+section:nth-of-type(3) li>img:first-child,
+section:nth-of-type(5) li>img:first-child {
+  grid-area: img;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* HEART (witte cirkel rechtsboven in tile) */
+section:nth-of-type(3) li>button,
+section:nth-of-type(5) li>button {
+  grid-area: img;
+  justify-self: end;
+  align-self: start;
+  margin: .5em;
+  width: 3em;
+  height: 3em;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+section:nth-of-type(3) li>button svg,
+section:nth-of-type(5) li>button svg {
+  width: 26px;
+  height: 26px;
+  fill: #0f3b35;
+}
+
+/* TITLE */
+section:nth-of-type(3) li>h3,
+section:nth-of-type(5) li>h3 {
+  grid-area: title;
+  margin: 0;
+  padding: 0 0 0 0;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* STARS */
+section:nth-of-type(3) li>img:nth-of-type(2),
+section:nth-of-type(5) li>img:nth-of-type(2) {
+  grid-area: s1;
+}
+
+section:nth-of-type(3) li>img:nth-of-type(3),
+section:nth-of-type(5) li>img:nth-of-type(3) {
+  grid-area: s2;
+}
+
+section:nth-of-type(3) li>img:nth-of-type(4),
+section:nth-of-type(5) li>img:nth-of-type(4) {
+  grid-area: s3;
+}
+
+section:nth-of-type(3) li>img:nth-of-type(5),
+section:nth-of-type(5) li>img:nth-of-type(5) {
+  grid-area: s4;
+}
+
+section:nth-of-type(3) li>img:nth-of-type(6),
+section:nth-of-type(5) li>img:nth-of-type(6) {
+  grid-area: s5;
+}
+
+section:nth-of-type(3) li>img[src*="star"],
+section:nth-of-type(5) li>img[src*="star"] {
+  width: 18px;
+  height: 18px;
+  align-self: center;
+  display: block;
+}
+
+/* REVIEW COUNT “7” rechts naast sterren */
+section:nth-of-type(3) li::after,
+section:nth-of-type(5) li::after {
+  content: var(--review-count);
+  grid-area: count;
+  align-self: center;
+  justify-self: start;
+  font-size: 14px;
+  color: #6b7280;
+  margin-left: 4px;
+}
+
+/* PRICE */
+section:nth-of-type(3) li>p:first-of-type,
+section:nth-of-type(5) li>p:first-of-type {
+  grid-area: price;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* COLORS */
+section:nth-of-type(3) li>p:last-of-type,
+section:nth-of-type(5) li>p:last-of-type {
+  grid-area: colors;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #8A8A8A;
+  ;
+}
+
+/* Spacing onder tile (zoals voorbeeld: tekst “hangt” onder tile) */
+section:nth-of-type(3) li>h3,
+section:nth-of-type(3) li>img[src*="star"],
+section:nth-of-type(3) li::after,
+section:nth-of-type(3) li>p section:nth-of-type(5) li>h3,
+section:nth-of-type(5) li>img[src*="star"],
+section:nth-of-type(5) li::after,
+section:nth-of-type(5) li>p {
+  padding-left: 0;
+}
+
+/* SECTION 4 */
+section:nth-of-type(4) {
+  background-color: #E9E0D2;
+  max-width: 520px;
+  margin: 40px auto;
+  font-family: system-ui, sans-serif;
+  padding: 3em 2em;
+}
+
+section:nth-of-type(4) h2 {
+
+  margin: 0;
+  color: #404040;
+  ;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+section:nth-of-type(4) a {
+  display: inline-block;
+  margin-top: 1.5em;
+  color: #404040;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+section:nth-of-type(4) img {
+  height: 480px;
+  object-fit: cover;
+  display: block;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 520px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

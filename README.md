@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Bever
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  [Bever - homepagina ](https://www.bever.nl/) 
-  <img src="readme-images/Homepagina.png" width="375px" alt="Home pagina van Bever">
+  Bever - homepagina (https://www.bever.nl/) 
+  <img src="readme-images/Homepage.JPG" width="375px" alt="Home pagina van Bever">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   https://www.bever.nl/c/klimmen/boulderen.html  
-  <img src="readme-images/TweedePagina.png" width="375px" alt="Pagina over Boulderen">
+  <img src="readme-images/SecondPage.JPG" width="375px" alt="Productpagina">
  
 </details>
 

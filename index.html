@@ -6,60 +6,312 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Howdy FED2526</title>
+	<title>Bever '25-'26</title>
 
 	<link href="styles/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+		rel="stylesheet">
 
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
 	<header>
+		<div>
+
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg"
+					alt="" /></button>
+
+
+
+			<img src="images/BeverLogo.png" alt="home" href="index.html" />
+			<img src="images/account.svg" alt="" />
+
+			<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false"
+				aria-hidden="true" class="as-a-icon__svg">
+				<path
+					d="m12 21.333-1.45-1.318C5.4 15.349 2 12.272 2 8.495 2 5.418 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.088C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.418 22 8.495c0 3.777-3.4 6.854-8.55 11.53L12 21.332Z">
+				</path>
+			</svg>
+			<img src="images/basket.svg" alt="">
+		</div>
+
 		<nav>
-			<!-- Hamburger menu  -->
-			<a href="https://www.bever.nl/"> Bever logo </a>
-			<a href="">account</a>
-			<a href="">heart</a>
-			<a href="">winkelmandje</a>
-			<p>zoekbalk</p>
-			<p>WIN-WIN deals - meer dan korting </p>
+			<ul>
+				<li><a href="#"> Dames</a></li>
+				<li><a href="#"> Heren</a></li>
+				<li><a href="#"> Kids</a></li>
+				<li><a href="#"> Schoenen</a></li>
+				<li><a href="#"> Rugtassen & tassen</a></li>
+				<li><a href="#"> Electronica</a>
+				</li>
+			</ul>
 		</nav>
+
+		<div>
+			<input type="search" name="zoeken" placeholder="Waar ben je naar opzoek" />
+			<img src="images/basket.svg">
+		</div>
+
+		<p>WIN-WIN deals - meer dan korting </p>
+
+
+		<ul>
+			<li>
+				<img src="images/Korting.jpeg" alt="Meer dan korting op verschillende producten. Shop nu" />
+				<a href="">Shop nu</a>
+			</li>
+
+			<li>
+				<img src="images/AyacuchoDeal.jpeg" alt="Ayacucho-deal op alle mutsen en handschoenen. Shop nu" />
+				<a href="">Shop nu</a>
+			</li>
+
+			<li>
+				<img src="images/StanleySale.jpeg" alt="20% korting op alles van staneley. Shop nu" />
+				<a href="">Shop nu</a>
+			</li>
+
+			<li>
+				<img src="images/Patagonia.jpeg" alt="Patagonia, de herontworpen Nano Puff. Shop Patagonia" />
+				<a href="">Shop patagonia</a>
+			</li>
+
+			<li>
+
+				<img src="images/MeerDanKorting.jpeg" alt="Meer dan korting. Verschillende acties" />
+				<a href="">Shop nu</a>
+			</li>
+		</ul>
 
 	</header>
 
 	<main>
 
-		<h1>Bever</h1>
+		<h1 class="visually-hidden">Bever</h1>
 
 		<section>
+			<h2>Bekijk onze collectie</h2>
+
+			<article>
+				<a href="">
+					<img src="images/winterjassen.jpeg" alt="" />
+					<p>Winterjassen</p>
+				</a>
+			</article>
+
+			<article>
+				<a href="">
+					<img src="images/fleeces.jpeg" alt="" />
+					<p>Fleeces & truien</p>
+				</a>
+			</article>
+
+			<article>
+				<a href="">
+					<img src="images/thermokleding.jpeg" alt="" />
+					<p>Thermokleding</p>
+				</a>
+			</article>
+
+			<article>
+				<a href="">
+					<img src="images/handschoenen.jpeg" alt="" />
+					<p>Handschoenen</p>
+				</a>
+			</article>
+
+			<article>
+				<a href="">
+					<img src="images/wandelschoenen.jpeg" alt="" />
+					<p>Wandelschoenen</p>
+				</a>
+			</article>
+
+			<article>
+				<a href="">
+					<img src="images/broeken.jpeg" alt="" />
+					<p>Broeken</p>
+				</a>
+			</article>
+
+		</section>
+
+		<section>
+			<h2>Vier de feestdagen buitengewoon</h2>
+			<a href="">Shop alle cadeaus</a>
+			<img src="images/cadeaus.jpeg">
+
+		</section>
+
+		<section>
+			<!-- H2? -->
 			<ul>
 				<li>
-					<h2>Méér dan korting </h2>
-					<img src="images/Korting.jpeg" alt="Meer dan korting op verschillende producten. Shop nu" />
+					<img src="images/hydroflask.jpg" alt="">
+					<button class="">
+						<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+							focusable="false" aria-hidden="true" class="as-a-icon__svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M12 5.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.777-3.394 6.855-8.537 11.518l-.013.012L12 21.35l-1.45-1.31-.04-.036C5.384 15.344 2 12.27 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09Zm0 13.56.1-.1C16.86 14.24 20 11.39 20 8.5c0-2-1.5-3.5-3.5-3.5-1.54 0-3.04.99-3.56 2.36h-1.87C10.54 5.99 9.04 5 7.5 5 5.5 5 4 6.5 4 8.5c0 2.89 3.14 5.74 7.9 10.05l.1.1Z">
+							</path>
+						</svg>
+					</button>
+					<h3>Hydro flask 200 ml micro drinkfles</h3>
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<p>€19,95</p>
+					<p>4 kleuren beschikbaar</p>
+
 				</li>
 
 				<li>
-					<h2>Ayacucho-deal </h2>
-					<img src="images/AyacuchoDeal.jpeg" alt="Ayacucho-deal op alle mutsen en handschoenen. Shop nu" />
+					<img src="images/buffmuts.jpg" alt="">
+					<button class="">
+						<img src="images/heart.svg">
+					</button>
+					
+					<h3>Nilah Lake Blue Muts Dames</h3>
+					<p>€44,95</p>
+					<p>1 kleur beschikbaar</p>
+
 				</li>
 
 				<li>
-					<h2>Korting Stanley </h2>
-					<img src="images/StanleySale.jpeg" alt="20% korting op alles van staneley. Shop nu" />
+					<img src="images/toilettas.jpg" alt="">
+					<button class="">
+						<img src="images/heart.svg">
+					</button>
+					
+					<h3>The North Face Base Camp S Toilettas</h3>
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<p>€34,95</p>
+					
+					<p>1 kleur beschikbaar</p>
+
 				</li>
 
 				<li>
-					<h2>Patagonia </h2>
-					<img src="images/Patagonia.jpeg" alt="Patagonia, de herontworpen Nano Puff. Shop Patagonia" />
+					<img src="images/powerbank.jpg" alt="">
+					<button class="">
+						<img src="images/heart.svg">
+					</button>
+					<h3>Xtorm 20W Fuel Series Powerbank 10.000 Oplader</h3>
+					<p>€39,95</p>
+					<p>1 kleur beschikbaar</p>
+
+				</li>
+			</ul>
+
+
+
+		</section>
+
+		<section>
+			<h2>Wintersport bij Bever</h2>
+			<a href="">Shop de nieuwe collectie</a>
+			<img src="images/wintersport.jpeg">
+
+		</section>
+
+
+		<!-- NOG PRGRAMMEREN NAAR ECHTE CAROUSEL - INHOUD -->
+		<section>
+
+			<!-- H2? -->
+			<ul>
+				<li>
+					<img src="images/hydroflask.jpg" alt="">
+					<button class="">
+						<img src="images/heart.svg">
+					</button>
+					<h3>Hydro flask 200 ml micro drinkfles</h3>
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<p>€19,95</p>
+					<p>4 kleuren beschikbaar</p>
+
 				</li>
 
 				<li>
-					<h2>Méér dan korting </h2>
-					<img src="images/MeerDanKorting.jpeg" alt="Meer dan korting. Verschillende acties" />
+					<img src="images/buffmuts.jpg" alt="">
+					<button class="">
+						<img src="images/heart.svg">
+					</button>
+					<!-- span?? -->
+					<p>-33%</p>
+					<p>Aanbieding</p>
+					<h3>Nilah Lake Blue Muts Dames</h3>
+
+					<p>€44,95</p>
+					<!-- span?? -->
+					<p>€29,95</p>
+					<p>1 kleur beschikbaar</p>
+
+				</li>
+
+				<li>
+					<img src="images/toilettas.jpg" alt="">
+					<button class="">
+						<img src="images/heart.svg">
+					</button>
+					<!-- span?? -->
+					<p>-28%</p>
+					<p>Aanbieding</p>
+					<h3>The North Face Base Camp S Toilettas</h3>
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<img src="images/star.svg" alt="">
+					<p>€34,95</p>
+					<!-- span?? -->
+					<p>€25,00</p>
+					<p>1 kleur beschikbaar</p>
+
+				</li>
+
+				<li>
+					<img src="images/powerbank.jpg" alt="">
+					<button class="">
+						<img src="images/heart.svg">
+					</button>
+					<h3>Xtorm 20W Fuel Series Powerbank 10.000 Oplader</h3>
+					<!-- span?? -->
+					<p>€39,95</p>
+					<p>1 kleur beschikbaar</p>
+
 				</li>
 			</ul>
 
 		</section>
+
+			<section>
+				<img src="images/jackwolfskin.jpeg" alt="">
+				<h2>Wild by nature</h2>
+				<p>Klaar voor elk avontuur.
+					Met onze Jack Wolfskin jassen ben je voorbereid op koude temperaturen en alles wat je nog meer te
+					wachten staat.</p>
+				<a href="">Shop Jack Wolfskin</a>
+			</section>
+
+			<!-- NOG PRGRAMMEREN NAAR ECHTE CAROUSEL - INHOUD -->
+			<section>
+
+			
 
 	</main>
 
