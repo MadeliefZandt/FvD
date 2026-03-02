@@ -104,26 +104,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Goed op weg, even lastig om de goede manier van carousel te maken. Met hulp is dit wel gelukt. Verder veel oefenen
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
@@ -137,26 +120,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  HTML ziet er goed uit, begin eerst bij de HTML, dan pas CSS en dan de rest. Niet te snel gelijk op een halve pagina CSS willen uitvoeren en niet de rest af maken. Ik moet iets beter de volgorde van de opbouw volgen: schets, dan HTML, dan CSS, etc. 
 
+Ik kreeg de verschillende logo's die SVG waren niet in de juiste huisstijl. Deze kon ik door middel van hulp van de studentassistent 
+in de html zetten en hierdoor wel stijlen. 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 
@@ -170,42 +138,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+Ik vind het lastig om alles via de toetsen te doen en moet dit even goed oefenen. Verder kwam dit wel goed uit de website. 
 
+<embed src="readme-images/WCAG.pdf" >
 </details>
 
 
 
 
-
-## Voortgang 3 (week 4)
-
-<details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
-</details>
 
 
 
@@ -217,19 +157,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/FrondEnd.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Veel oefenen. Met hulp en chatgpt kan ik de uitleg beter begrijpen wat ik aan het doen ben ipv het voorgekauwd te krijgen. 
+  Wat ik goed kan is het netjes opmaken van de pagina. Ook ben ik tevreden met de eerste carousel. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/carousel.png.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik vind het soms lastig om mijn tijd goed te verdelen over de verschillende onderwerpen. Zo kan ik veel te lang op 1 onderdeel blijven hangen en tegelijk niet verder komen met de rest van de website. Ook vind ik het lastig om te bepalen wanneer de grid goed gebruikt is. Dit heb ik dan ok geprobeerd te doen met een grid generator maar bleef ik lasig vinden. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/grid.png.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -245,8 +186,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1.  https://css-tricks.com/almanac/properties/o/object-fit/ 
+  2.  https://www.w3schools.com/tags/ref_pxtoemconversion.asp 
+  3. https://www.w3schools.com/css/css_padding.asp
+  4. https://stackoverflow.com/questions/1027354/i-need-an-unordered-list-without-any-bullets
+  5. https://cssgrid-generator.netlify.app/
+  6.  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-marker-group
+  7. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  8. https://stackoverflow.com/questions/26349987/how-do-i-apply-a-style-to-all-children-of-an-element
+  9. https://css-tricks.com/complete-guide-css-grid-layout/
+  10. https://stackoverflow.com/questions/5093427/css-using-images-instead-of-bullets
+  11. https://freefrontend.com/css-toggle-menus/
+  12. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter
+  13. https://css-tricks.com/accessible-svgs/
+  
+
+
 
 </details>
