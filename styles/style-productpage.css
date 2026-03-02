@@ -1,0 +1,150 @@
+/* CAROUSEL PRODUCT */
+main section:nth-of-type(1) h1 {
+    padding: 0em 1.2em;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+main section:nth-of-type(1) p {
+    padding: 0em 1.2em;
+}
+
+main section:nth-of-type(1) ul li {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    max-width: 100vw;
+    text-align: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+main section:nth-of-type(1) ul li img {
+    width: 100vw;
+    overflow: scroll;
+    object-fit: cover;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+main section:nth-of-type(1) nav ul {
+    background-color: white;
+}
+
+main section:nth-of-type(1)>ul {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    padding: 0;
+}
+
+main section:nth-of-type(1) ul {
+    scrollbar-width: none;
+    scroll-marker-group: after;
+}
+
+main section:nth-of-type(1) ul::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    column-gap: .5em;
+}
+
+main section:nth-of-type(1) ul li::scroll-marker {
+    /* net als een after */
+    /* het attribuut komt uit de html - is voor screenreaders */
+    /* overgenomen uit de les */
+    content: '';
+
+    width: 2.2em;
+    height: .3em;
+    background-color: #c6c6c6;
+}
+
+main section:nth-of-type(1) ul li::scroll-marker:target-current {
+    background: #0d082b;
+}
+
+section:nth-of-type(2) {
+    padding: 0em 1.5em 1.5em;
+}
+
+/* kleur regel */
+section:nth-of-type(2)>p:first-of-type {
+    color: #555;
+    font-size: 1.1em;
+}
+
+section:nth-of-type(2) strong {
+    color: var(--primary-color-text);
+}
+
+/* titel */
+section:nth-of-type(2)>h2 {
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+/* maat knoppen */
+section:nth-of-type(2) form:first-of-type {
+    display: flex;
+    gap: 1em;
+    margin: 1em 0 1.5em;
+}
+
+section:nth-of-type(2) form:first-of-type button {
+    flex: 1;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: .8em;
+    border: .1em solid #dcdcdc;
+    background: white;
+}
+
+/* prijs */
+section:nth-of-type(2)>p:nth-of-type(2) {
+    font-size: 2.1em;
+    font-weight: 700;
+    margin: .5em 0 1em;
+}
+
+/* levertijd */
+section:nth-of-type(2)>p:nth-of-type(3) {
+    color: #666;
+    margin-bottom: 1.2em;
+}
+
+/* winkelmand rij */
+section:nth-of-type(2) form:nth-of-type(2) {
+    display: flex;
+    gap: 1.2em;
+    margin-bottom: 1em;
+}
+
+section:nth-of-type(2) form:nth-of-type(2) button:first-of-type {
+    flex: 1;
+    padding: 1em;
+    border-radius: .8em;
+    border: none;
+    background: #355a56;
+    color: white;
+    font-size: 1em;
+}
+
+section:nth-of-type(2) form:nth-of-type(2) button:last-of-type {
+    width: 4em;
+    border-radius: .8em;
+    border: .1em solid #355a56;
+    background: white;
+    font-size: 1.2em;
+}
+
+
+section:nth-of-type(2)>button {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: .9em;
+    border: .1em solid #222;
+    background: #f7f7f7;
+}
